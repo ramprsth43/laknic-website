@@ -3,71 +3,107 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Laknic | Cloud, DBA & Modern Workplace Support</title>
-  <meta name="description" content="Laknic provides Azure cloud, SQL Server DBA, Intune, SCCM, monitoring, migration and production support services for businesses." />
+
+  <title>Laknic | Enterprise IT Infrastructure Support</title>
+  <meta name="description" content="Laknic provides enterprise IT infrastructure support across Azure cloud, database administration, endpoint management, monitoring, migration, security operations and cloud cost optimization." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <div class="page-glow"></div>
+  <div class="mesh-bg"></div>
+  <div class="noise-layer"></div>
 
   <header class="site-header">
-    <a class="brand" href="index.html">
+    <a class="brand" href="index.html" aria-label="Laknic home">
       <span class="brand-mark">L</span>
-      <span>
+      <span class="brand-copy">
         <strong>Laknic</strong>
-        <small>Cloud • DBA • Endpoint</small>
+        <small>Enterprise IT Support</small>
       </span>
     </a>
 
-    <button class="mobile-menu" id="mobileMenu">☰</button>
+    <button class="mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
 
     <nav class="nav" id="nav">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
-      <a href="#plans">Plans</a>
-      <a href="#contact">Contact</a>
+      <a href="#cost">Cost Optimization</a>
+      <a href="#plans">Support Plans</a>
+      <a class="nav-cta" href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
     <section class="hero">
       <div class="hero-content reveal">
-        <span class="pill">Enterprise IT support for cloud, database and endpoints</span>
-        <h1>Keep your Azure, SQL Server and workplace systems stable, secure and fast.</h1>
+        <span class="pill">Enterprise infrastructure, cloud and workplace operations</span>
+        <h1>Strengthen reliability, security, performance and cost governance across your IT environment.</h1>
         <p>
-          Laknic helps businesses manage production issues, improve performance, reduce cloud cost,
-          strengthen monitoring, and support modern workplace platforms such as Microsoft Intune and SCCM.
+          Laknic supports organizations that need dependable infrastructure operations across Azure cloud,
+          database platforms, endpoint management, monitoring, migration and production support.
         </p>
+
         <div class="hero-actions">
-          <a class="btn primary" href="#contact">Request Support</a>
-          <a class="btn secondary" href="services.html">Explore Services</a>
+          <a class="btn primary" href="#contact">Request Consultation</a>
+          <a class="btn secondary" href="services.html">View Capabilities</a>
         </div>
-        <div class="trust-row">
-          <span>Azure Support</span>
-          <span>SQL DBA</span>
-          <span>Intune / SCCM</span>
+
+        <div class="trust-row" aria-label="Core services">
+          <span>Azure Operations</span>
+          <span>Database Administration</span>
+          <span>Endpoint Management</span>
           <span>Monitoring</span>
-          <span>Migration</span>
+          <span>Cost Optimization</span>
         </div>
       </div>
 
-      <div class="hero-panel reveal delay">
-        <div class="dashboard-card">
-          <div class="status-line">
-            <span class="dot green"></span> Production health view
+      <div class="hero-visual reveal delay">
+        <div class="ops-console">
+          <div class="console-top">
+            <span class="pulse"></span>
+            <span>Infrastructure Operations View</span>
           </div>
-          <div class="metric-grid">
-            <div><strong>Cloud</strong><span>VMs, storage, network</span></div>
-            <div><strong>DBA</strong><span>Backup, tuning, HA/DR</span></div>
-            <div><strong>Endpoint</strong><span>Intune, SCCM, patching</span></div>
-            <div><strong>Security</strong><span>Access, hardening, alerts</span></div>
+
+          <div class="console-grid">
+            <div class="console-tile">
+              <span>Availability</span>
+              <strong>Stable</strong>
+              <small>Incident-focused operations</small>
+            </div>
+            <div class="console-tile">
+              <span>Cost</span>
+              <strong>Optimized</strong>
+              <small>Right sizing and governance</small>
+            </div>
+            <div class="console-tile">
+              <span>Security</span>
+              <strong>Controlled</strong>
+              <small>Access and configuration review</small>
+            </div>
+            <div class="console-tile">
+              <span>Monitoring</span>
+              <strong>Visible</strong>
+              <small>Alerts, logs and dashboards</small>
+            </div>
           </div>
-          <div class="signal-card">
-            <span>Typical outcomes</span>
-            <strong>Fewer incidents • Faster RCA • Better visibility • Lower cost</strong>
+
+          <div class="console-graph">
+            <div class="bar b1"></div>
+            <div class="bar b2"></div>
+            <div class="bar b3"></div>
+            <div class="bar b4"></div>
+            <div class="bar b5"></div>
+            <div class="bar b6"></div>
+          </div>
+
+          <div class="console-note">
+            <strong>Operational outcome:</strong>
+            fewer repeated incidents, better visibility, improved performance and controlled cloud spend.
           </div>
         </div>
       </div>
@@ -75,166 +111,285 @@
 
     <section class="section reveal">
       <div class="section-heading">
-        <span class="eyebrow">What we support</span>
-        <h2>Practical support that business users can understand</h2>
+        <span class="eyebrow">Core capabilities</span>
+        <h2>Infrastructure support explained for business and technical teams</h2>
         <p>
-          We do not only “manage servers”. We help you keep business applications available,
-          recoverable, monitored and cost-controlled.
+          We translate technical operations into clear business outcomes: uptime, recoverability,
+          security posture, performance, cost control and operational accountability.
         </p>
       </div>
 
-      <div class="service-grid">
-        <article class="service-card">
-          <div class="icon">☁️</div>
+      <div class="capability-grid">
+        <article class="capability-card">
+          <span class="card-icon cloud"></span>
           <h3>Azure Cloud Operations</h3>
-          <p>Support for Azure virtual machines, disks, networking, storage, backups, monitoring and cost optimization.</p>
+          <p>Support for Azure virtual machines, disks, storage, networking, backups, private connectivity and operational troubleshooting.</p>
           <ul>
-            <li>Fix VM access, performance and availability issues</li>
-            <li>Review VM sizing, disks and reservation/cost options</li>
-            <li>Set up alerts for CPU, memory, disk and service health</li>
+            <li>Infrastructure health checks and production issue triage</li>
+            <li>VM sizing, disk performance and availability review</li>
+            <li>Network, access, backup and service health support</li>
           </ul>
         </article>
 
-        <article class="service-card">
-          <div class="icon">🗄️</div>
-          <h3>SQL Server DBA Support</h3>
-          <p>Database support to keep SQL Server stable, backed up, secure and performing well.</p>
+        <article class="capability-card highlight">
+          <span class="card-icon cost"></span>
+          <h3>Azure Cost Optimization</h3>
+          <p>Cloud cost control is now a major business priority. We help identify waste, right-size resources and improve governance.</p>
           <ul>
-            <li>Backup, restore, patching and maintenance plans</li>
+            <li>Oversized VM and unused resource review</li>
+            <li>Reservation, savings plan and capacity planning guidance</li>
+            <li>Cost visibility, tagging and monthly optimization actions</li>
+          </ul>
+        </article>
+
+        <article class="capability-card">
+          <span class="card-icon database"></span>
+          <h3>Database Administration Support</h3>
+          <p>Support for SQL Server and database platforms focused on availability, backup reliability, security and performance.</p>
+          <ul>
+            <li>Backup, restore, maintenance and recovery readiness</li>
             <li>Performance tuning, indexing and blocking analysis</li>
-            <li>Availability support for Always On, clustering and DR</li>
+            <li>High availability, disaster recovery and patch planning</li>
           </ul>
         </article>
 
-        <article class="service-card">
-          <div class="icon">💻</div>
-          <h3>Modern Workplace Management</h3>
-          <p>Endpoint and device management support using Microsoft Intune, SCCM/MECM and Windows management tools.</p>
+        <article class="capability-card">
+          <span class="card-icon endpoint"></span>
+          <h3>Modern Workplace & Endpoint</h3>
+          <p>Support for Intune, SCCM/MECM, endpoint compliance, application deployment, patching and device operations.</p>
           <ul>
-            <li>Device enrollment, policy deployment and troubleshooting</li>
-            <li>Patch management and application deployment support</li>
-            <li>Endpoint compliance and security configuration assistance</li>
-          </ul>
-        </article>
-
-        <article class="service-card">
-          <div class="icon">📊</div>
-          <h3>Monitoring & Alerting</h3>
-          <p>Proactive visibility so issues are detected before users complain.</p>
-          <ul>
-            <li>Azure Monitor, Log Analytics and alert rules</li>
-            <li>Disk, CPU, memory, SQL health and backup monitoring</li>
-            <li>Dashboards and operational reporting</li>
+            <li>Device enrollment and policy troubleshooting</li>
+            <li>Patch compliance and application deployment support</li>
+            <li>Endpoint security baseline and operational reporting</li>
           </ul>
         </article>
       </div>
     </section>
 
-    <section class="section split reveal">
+    <section class="section story-section reveal">
+      <div class="story-card">
+        <div>
+          <span class="eyebrow">Business problems we help solve</span>
+          <h2>When infrastructure issues affect users, cost or compliance, we help bring control back.</h2>
+          <p>
+            Clients do not always need “more tools.” They need clear visibility, practical fixes,
+            documented actions and ongoing operational discipline.
+          </p>
+        </div>
+
+        <div class="problem-grid">
+          <div>
+            <strong>Applications are slow</strong>
+            <span>We investigate database, server, disk, network and workload bottlenecks.</span>
+          </div>
+          <div>
+            <strong>Cloud bills are increasing</strong>
+            <span>We review sizing, unused resources, reserved capacity and cost governance.</span>
+          </div>
+          <div>
+            <strong>Alerts are missing or noisy</strong>
+            <span>We build meaningful monitoring instead of creating unnecessary alert noise.</span>
+          </div>
+          <div>
+            <strong>Endpoint compliance is unclear</strong>
+            <span>We help improve visibility for patching, policy deployment and device health.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split reveal" id="cost">
       <div>
-        <span class="eyebrow">Why clients choose us</span>
-        <h2>Support that speaks both technology and business impact</h2>
+        <span class="eyebrow">Azure cost optimization</span>
+        <h2>Control cloud spend without weakening performance or availability.</h2>
         <p>
-          Many IT issues are not just technical problems. A slow database can delay billing.
-          A failed backup can create audit risk. A wrong cloud size can waste monthly budget.
-          We explain what happened, what it affects, and what must be done next.
+          Azure cost optimization is not only about reducing price. It is about matching business workloads
+          to the correct infrastructure, removing waste, improving reservations and creating monthly visibility.
         </p>
-        <a class="btn primary" href="services.html">View Detailed Services</a>
+        <a class="btn primary" href="#contact">Request Cost Review</a>
       </div>
 
-      <div class="benefit-list">
-        <div><strong>Fast incident response</strong><span>Clear triage, action plan and ownership.</span></div>
-        <div><strong>Root cause focus</strong><span>Not just temporary fixes; we identify the real reason.</span></div>
-        <div><strong>Cost-aware operations</strong><span>Improve performance without unnecessary spend.</span></div>
-        <div><strong>Production mindset</strong><span>Changes are planned with downtime, rollback and risk in mind.</span></div>
+      <div class="optimization-panel">
+        <div class="optimization-row">
+          <span>01</span>
+          <div>
+            <strong>Resource right-sizing</strong>
+            <p>Review VM sizes, disks, storage tiers and underused resources.</p>
+          </div>
+        </div>
+        <div class="optimization-row">
+          <span>02</span>
+          <div>
+            <strong>Reservation and savings review</strong>
+            <p>Assess reservation fit, renewal timing and workload growth planning.</p>
+          </div>
+        </div>
+        <div class="optimization-row">
+          <span>03</span>
+          <div>
+            <strong>Cost visibility and governance</strong>
+            <p>Improve tagging, budget alerts and monthly reporting discipline.</p>
+          </div>
+        </div>
+        <div class="optimization-row">
+          <span>04</span>
+          <div>
+            <strong>Performance-safe reduction</strong>
+            <p>Recommend savings only after considering workload risk and service impact.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-heading">
+        <span class="eyebrow">Operational approach</span>
+        <h2>How we engage</h2>
+        <p>A structured support model helps avoid confusion during incidents, changes and reviews.</p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-card">
+          <span>1</span>
+          <h3>Assess</h3>
+          <p>Understand environment, current issues, risk areas, business impact and support priority.</p>
+        </div>
+        <div class="process-card">
+          <span>2</span>
+          <h3>Stabilize</h3>
+          <p>Resolve urgent incidents, reduce recurring problems and document immediate corrective actions.</p>
+        </div>
+        <div class="process-card">
+          <span>3</span>
+          <h3>Optimize</h3>
+          <p>Improve cost, performance, monitoring, backup, access and operational efficiency.</p>
+        </div>
+        <div class="process-card">
+          <span>4</span>
+          <h3>Operate</h3>
+          <p>Provide ongoing support, reporting, health checks, RCA and planned improvement actions.</p>
+        </div>
       </div>
     </section>
 
     <section class="section reveal" id="plans">
       <div class="section-heading">
         <span class="eyebrow">Support plans</span>
-        <h2>Choose the right level of support</h2>
-        <p>Pricing can be finalized after scope review. These plans help clients understand the engagement model.</p>
+        <h2>Flexible support models for different business needs</h2>
+        <p>
+          Final pricing depends on environment size, support hours, response expectations and scope.
+          These plans define the engagement style.
+        </p>
       </div>
 
       <div class="pricing-grid">
-        <div class="price-card">
-          <h3>Starter Support</h3>
-          <p>For small businesses needing occasional help.</p>
+        <article class="price-card">
+          <span class="plan-label">Essential</span>
+          <h3>Advisory Support</h3>
+          <p>For small teams needing expert guidance, reviews and issue-based assistance.</p>
           <ul>
-            <li>Email-based support</li>
-            <li>Basic Azure / SQL review</li>
-            <li>Monthly health recommendations</li>
-            <li>Best for small workloads</li>
+            <li>Cloud / database / endpoint consultation</li>
+            <li>Basic environment health review</li>
+            <li>Cost and monitoring recommendations</li>
+            <li>Email-based coordination</li>
           </ul>
-          <a class="btn secondary" href="#contact">Discuss Starter</a>
-        </div>
+          <a class="btn secondary" href="#contact">Discuss Essential</a>
+        </article>
 
-        <div class="price-card featured">
-          <span class="badge">Popular</span>
-          <h3>Business Support</h3>
-          <p>For companies running important production workloads.</p>
+        <article class="price-card featured">
+          <span class="plan-label">Recommended</span>
+          <h3>Business Operations</h3>
+          <p>For organizations running important workloads that need reliable operational support.</p>
           <ul>
             <li>Priority incident support</li>
-            <li>Cloud + DBA + monitoring assistance</li>
-            <li>Performance and cost review</li>
-            <li>Change planning and RCA support</li>
+            <li>Azure, database and endpoint support coverage</li>
+            <li>Performance, monitoring and cost review</li>
+            <li>Change planning and RCA assistance</li>
           </ul>
           <a class="btn primary" href="#contact">Discuss Business</a>
-        </div>
+        </article>
 
-        <div class="price-card">
-          <h3>Managed Operations</h3>
-          <p>For businesses needing ongoing operations support.</p>
+        <article class="price-card">
+          <span class="plan-label">Advanced</span>
+          <h3>Managed Infrastructure</h3>
+          <p>For organizations that need structured ongoing support and operational governance.</p>
           <ul>
-            <li>Regular health checks</li>
-            <li>Proactive alert review</li>
-            <li>Patch, backup and compliance support</li>
-            <li>Cloud, DBA and endpoint operations</li>
+            <li>Scheduled health checks and reporting</li>
+            <li>Backup, patch and alert review</li>
+            <li>Monthly Azure cost optimization actions</li>
+            <li>Operational improvement roadmap</li>
           </ul>
           <a class="btn secondary" href="#contact">Discuss Managed</a>
-        </div>
+        </article>
       </div>
     </section>
 
     <section class="section contact-section reveal" id="contact">
       <div>
-        <span class="eyebrow">Contact Laknic</span>
-        <h2>Tell us what support you need</h2>
+        <span class="eyebrow">Start the conversation</span>
+        <h2>Share your infrastructure support requirement.</h2>
         <p>
-          Share your requirement, issue summary, environment type, and urgency.
-          We will review and respond with the next action plan.
+          Tell us about your environment, current issue, project requirement or support expectation.
+          We will review and respond with the right next step.
         </p>
+
         <div class="contact-points">
-          <span>✅ No login required</span>
-          <span>✅ No database required</span>
-          <span>✅ Email-based inquiry form</span>
+          <span>Enterprise infrastructure support</span>
+          <span>Azure cost and operations review</span>
+          <span>Database administration and performance support</span>
+          <span>Intune, SCCM and endpoint operations</span>
         </div>
       </div>
 
       <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <input type="text" name="name" placeholder="Your name" required />
-        <input type="email" name="email" placeholder="Your email" required />
-        <input type="text" name="company" placeholder="Company / project name" />
-        <select name="support_area" required>
-          <option value="">Select support area</option>
-          <option>Azure Cloud Support</option>
-          <option>SQL Server DBA Support</option>
-          <option>Intune / SCCM / Endpoint Support</option>
-          <option>Monitoring & Alerting</option>
-          <option>Migration / Upgrade</option>
-          <option>Production Incident</option>
-        </select>
-        <textarea name="message" rows="6" placeholder="Explain your requirement or issue" required></textarea>
-        <button class="btn primary" type="submit">Send Request</button>
-        <small>Replace YOUR_FORM_ID with your Formspree form endpoint before go-live.</small>
+        <label>
+          Full name
+          <input type="text" name="name" placeholder="Your name" required />
+        </label>
+
+        <label>
+          Business email
+          <input type="email" name="email" placeholder="you@company.com" required />
+        </label>
+
+        <label>
+          Company / project
+          <input type="text" name="company" placeholder="Company or project name" />
+        </label>
+
+        <label>
+          Support area
+          <select name="support_area" required>
+            <option value="">Select support area</option>
+            <option>Azure Cloud Operations</option>
+            <option>Azure Cost Optimization</option>
+            <option>Database Administration Support</option>
+            <option>Modern Workplace / Intune / SCCM</option>
+            <option>Monitoring and Alerting</option>
+            <option>Migration / Upgrade</option>
+            <option>Production Incident Support</option>
+          </select>
+        </label>
+
+        <label>
+          Requirement summary
+          <textarea name="message" rows="6" placeholder="Explain your issue, requirement, environment and urgency" required></textarea>
+        </label>
+
+        <button class="btn primary full" type="submit">Send Support Request</button>
+        <small>Before go-live, replace YOUR_FORM_ID with your Formspree endpoint.</small>
       </form>
     </section>
   </main>
 
   <footer class="footer">
-    <strong>Laknic</strong>
-    <p>Cloud, DBA and Modern Workplace Support</p>
+    <div class="footer-brand">
+      <span class="brand-mark">L</span>
+      <div>
+        <strong>Laknic</strong>
+        <p>Enterprise IT Infrastructure Support</p>
+      </div>
+    </div>
     <span>© 2026 Laknic. All rights reserved.</span>
   </footer>
 

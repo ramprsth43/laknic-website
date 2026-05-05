@@ -3,238 +3,314 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services | Laknic</title>
-  <meta name="description" content="Detailed Azure, SQL Server DBA, Intune, SCCM, monitoring, migration and production support services from Laknic." />
+
+  <title>Services | Laknic Enterprise IT Support</title>
+  <meta name="description" content="Detailed enterprise IT infrastructure support services including Azure operations, Azure cost optimization, database administration, monitoring, endpoint management, Intune and SCCM support." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <div class="page-glow"></div>
+  <div class="mesh-bg"></div>
+  <div class="noise-layer"></div>
 
   <header class="site-header">
-    <a class="brand" href="index.html">
+    <a class="brand" href="index.html" aria-label="Laknic home">
       <span class="brand-mark">L</span>
-      <span>
+      <span class="brand-copy">
         <strong>Laknic</strong>
-        <small>Cloud • DBA • Endpoint</small>
+        <small>Enterprise IT Support</small>
       </span>
     </a>
 
-    <button class="mobile-menu" id="mobileMenu">☰</button>
+    <button class="mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
 
     <nav class="nav" id="nav">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
-      <a href="index.html#plans">Plans</a>
-      <a href="index.html#contact">Contact</a>
+      <a href="index.html#cost">Cost Optimization</a>
+      <a href="index.html#plans">Support Plans</a>
+      <a class="nav-cta" href="index.html#contact">Contact</a>
     </nav>
   </header>
 
   <main>
     <section class="inner-hero reveal">
-      <span class="pill">Detailed services</span>
-      <h1>End-to-end IT support explained in simple business language</h1>
+      <span class="pill">Detailed service capabilities</span>
+      <h1>Enterprise IT infrastructure support, explained clearly.</h1>
       <p>
-        Below is what Laknic can support, what problems we solve, and what value the client receives.
+        Our services are structured around business outcomes: reliability, security, performance,
+        recoverability, cost control and operational visibility.
       </p>
     </section>
 
     <section class="section service-detail reveal">
-      <div class="detail-card">
-        <span class="detail-icon">☁️</span>
-        <h2>Azure Cloud Support</h2>
-        <p>
-          Azure cloud support means helping businesses run their cloud servers, storage, network and monitoring safely.
-          We help when servers are slow, users cannot connect, costs are increasing, or alerts are missing.
-        </p>
+      <article class="detail-card">
+        <div class="detail-head">
+          <span class="detail-icon cloud"></span>
+          <div>
+            <h2>Azure Cloud Operations Support</h2>
+            <p>
+              We help organizations operate Azure infrastructure in a controlled and reliable way.
+              This includes support for compute, storage, networking, access, backup, availability and troubleshooting.
+            </p>
+          </div>
+        </div>
+
         <div class="detail-grid">
           <div>
-            <h4>What we support</h4>
+            <h4>Support coverage</h4>
             <ul>
-              <li>Azure Virtual Machines, disks, snapshots and resizing</li>
-              <li>Virtual networks, NSG rules, VPN and private connectivity</li>
-              <li>Storage accounts, access settings and backup configuration</li>
-              <li>Azure Monitor, Log Analytics and alert rules</li>
-              <li>Cost review, right-sizing and reservation guidance</li>
+              <li>Azure virtual machine health, sizing and availability review</li>
+              <li>Disk performance, storage configuration and snapshot support</li>
+              <li>Virtual network, NSG, routing, VPN and private connectivity support</li>
+              <li>Backup configuration, restore validation and recovery planning</li>
+              <li>Azure Monitor, Log Analytics and operational alerting</li>
             </ul>
           </div>
           <div>
-            <h4>Business value</h4>
+            <h4>Client value</h4>
             <ul>
-              <li>Reduce outages and repeated incidents</li>
-              <li>Improve cloud visibility and response time</li>
-              <li>Avoid unnecessary spend from oversized resources</li>
-              <li>Improve security posture and operational control</li>
+              <li>Improved infrastructure stability and visibility</li>
+              <li>Faster diagnosis of cloud-related incidents</li>
+              <li>Lower risk during infrastructure changes</li>
+              <li>Better governance over production workloads</li>
             </ul>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="detail-card">
-        <span class="detail-icon">🗄️</span>
-        <h2>SQL Server DBA Support</h2>
-        <p>
-          SQL Server DBA support means making sure your databases are available, backed up, optimized and protected.
-          If an application is slow, login fails, jobs fail, backups are missing, or SQL errors occur, we help investigate and fix it.
-        </p>
+      <article class="detail-card premium-detail">
+        <div class="detail-head">
+          <span class="detail-icon cost"></span>
+          <div>
+            <h2>Azure Cost Optimization & Governance</h2>
+            <p>
+              Cloud cost is one of the biggest concerns for businesses today. We help identify waste,
+              reduce unnecessary spend and create better governance without compromising production reliability.
+            </p>
+          </div>
+        </div>
+
         <div class="detail-grid">
           <div>
-            <h4>What we support</h4>
+            <h4>Support coverage</h4>
             <ul>
-              <li>SQL Server installation, patching and configuration</li>
-              <li>Backup and restore strategy, job failures and recovery testing</li>
-              <li>Performance tuning, index review and slow query troubleshooting</li>
-              <li>Blocking, deadlock, high CPU and memory pressure analysis</li>
-              <li>Always On, clustering, replication and disaster recovery support</li>
-              <li>Security review, login access and least-privilege support</li>
+              <li>Oversized VM and underutilized resource analysis</li>
+              <li>Unattached disk, unused IP, idle resource and storage tier review</li>
+              <li>Reservation, savings plan and capacity planning recommendations</li>
+              <li>Cost allocation using tagging, budget alerts and reporting</li>
+              <li>Monthly optimization review for recurring cloud spend control</li>
             </ul>
           </div>
           <div>
-            <h4>Business value</h4>
+            <h4>Client value</h4>
+            <ul>
+              <li>Improved visibility of where cloud money is spent</li>
+              <li>Reduced avoidable Azure cost</li>
+              <li>Better planning before scaling or reservation purchase</li>
+              <li>Performance-safe recommendations instead of blind cost cutting</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="detail-card">
+        <div class="detail-head">
+          <span class="detail-icon database"></span>
+          <div>
+            <h2>Database Administration & Performance Support</h2>
+            <p>
+              We support SQL Server and database environments that require stable performance,
+              reliable backups, secure access and recoverable operations.
+            </p>
+          </div>
+        </div>
+
+        <div class="detail-grid">
+          <div>
+            <h4>Support coverage</h4>
+            <ul>
+              <li>Database installation, configuration, patching and maintenance</li>
+              <li>Backup, restore, recovery testing and job failure support</li>
+              <li>Performance tuning, indexing, query analysis and wait review</li>
+              <li>Blocking, deadlock, high CPU, memory pressure and disk latency analysis</li>
+              <li>High availability, disaster recovery and upgrade planning</li>
+              <li>Login, permission and least-privilege access support</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Client value</h4>
             <ul>
               <li>Faster applications and reduced user complaints</li>
-              <li>Reliable backup and recovery confidence</li>
-              <li>Reduced risk of data loss and downtime</li>
-              <li>Clear RCA for audit and management reporting</li>
+              <li>Better backup and recovery confidence</li>
+              <li>Reduced risk of unplanned database downtime</li>
+              <li>Clear technical RCA for repeated database issues</li>
             </ul>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="detail-card">
-        <span class="detail-icon">💻</span>
-        <h2>Modern Workplace Management: Intune, SCCM / MECM</h2>
-        <p>
-          Modern Workplace support means helping businesses manage employee laptops, desktops, applications, patching
-          and security policies. This is important for remote users, compliance and endpoint security.
-        </p>
+      <article class="detail-card">
+        <div class="detail-head">
+          <span class="detail-icon endpoint"></span>
+          <div>
+            <h2>Modern Workplace: Intune, SCCM / MECM & Endpoint Operations</h2>
+            <p>
+              We support endpoint management platforms used to manage employee devices, security policies,
+              Windows updates, application deployment and compliance reporting.
+            </p>
+          </div>
+        </div>
+
         <div class="detail-grid">
           <div>
-            <h4>What we support</h4>
+            <h4>Support coverage</h4>
             <ul>
-              <li>Microsoft Intune device enrollment and compliance policies</li>
-              <li>SCCM / MECM application deployment and troubleshooting</li>
-              <li>Windows patch management and update compliance</li>
-              <li>Endpoint security baseline and configuration policy review</li>
-              <li>App packaging, deployment failures and client health issues</li>
-              <li>Device inventory, reporting and operational dashboards</li>
+              <li>Microsoft Intune enrollment, compliance and configuration policies</li>
+              <li>SCCM / MECM client health, collections and deployment troubleshooting</li>
+              <li>Windows patch management and update compliance review</li>
+              <li>Application packaging and deployment failure analysis</li>
+              <li>Endpoint security baseline, inventory and reporting support</li>
             </ul>
           </div>
           <div>
-            <h4>Business value</h4>
+            <h4>Client value</h4>
             <ul>
-              <li>Better control over company devices</li>
-              <li>Improved patch and security compliance</li>
+              <li>Improved endpoint compliance and security posture</li>
               <li>Reduced manual desktop support effort</li>
-              <li>Faster rollout of applications and policies</li>
+              <li>Better visibility into patching and device health</li>
+              <li>Faster and more controlled application rollout</li>
             </ul>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="detail-card">
-        <span class="detail-icon">📊</span>
-        <h2>Monitoring, Alerts & Operational Visibility</h2>
-        <p>
-          Monitoring helps detect problems early. Instead of waiting for users to report an outage,
-          alerts can notify teams when disk space, CPU, memory, backup, SQL jobs or application health crosses limits.
-        </p>
+      <article class="detail-card">
+        <div class="detail-head">
+          <span class="detail-icon monitoring"></span>
+          <div>
+            <h2>Monitoring, Alerting & Operational Dashboards</h2>
+            <p>
+              We help organizations detect issues early by creating meaningful monitoring for infrastructure,
+              databases, backups, endpoint health and operational events.
+            </p>
+          </div>
+        </div>
+
         <div class="detail-grid">
           <div>
-            <h4>What we support</h4>
+            <h4>Support coverage</h4>
             <ul>
-              <li>Azure Monitor and Log Analytics setup</li>
-              <li>Disk, CPU, memory and service health alerts</li>
-              <li>SQL backup, job, blocking and availability alerts</li>
-              <li>Dashboard creation for operations and management</li>
-              <li>Alert threshold tuning to reduce noise</li>
+              <li>Azure Monitor and Log Analytics workspace configuration</li>
+              <li>Server disk, CPU, memory and service availability alerts</li>
+              <li>Database backup, job, blocking and availability monitoring</li>
+              <li>Alert threshold tuning to reduce false or noisy alerts</li>
+              <li>Operational dashboards and management-level reporting</li>
             </ul>
           </div>
           <div>
-            <h4>Business value</h4>
+            <h4>Client value</h4>
             <ul>
-              <li>Early warning before incidents become major outages</li>
-              <li>Better operational reporting</li>
+              <li>Early detection of production risks</li>
               <li>Reduced manual checking and firefighting</li>
-              <li>Improved SLA confidence</li>
+              <li>Better reporting for IT leadership</li>
+              <li>Improved SLA and operational confidence</li>
             </ul>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="detail-card">
-        <span class="detail-icon">🔄</span>
-        <h2>Migration, Upgrade & Modernization</h2>
-        <p>
-          Migration and upgrade support helps businesses move workloads safely, upgrade old systems,
-          reduce risk and avoid unplanned downtime.
-        </p>
+      <article class="detail-card">
+        <div class="detail-head">
+          <span class="detail-icon migration"></span>
+          <div>
+            <h2>Migration, Upgrade & Infrastructure Modernization</h2>
+            <p>
+              We help plan and support infrastructure and database migrations, version upgrades and modernization
+              projects with risk, rollback and business continuity in mind.
+            </p>
+          </div>
+        </div>
+
         <div class="detail-grid">
           <div>
-            <h4>What we support</h4>
+            <h4>Support coverage</h4>
             <ul>
-              <li>On-premises to Azure migration planning</li>
-              <li>SQL Server version upgrade planning and validation</li>
-              <li>Azure VM sizing, disk planning and cutover support</li>
-              <li>Backup, rollback and downtime planning</li>
+              <li>On-premises to Azure migration assessment and planning</li>
+              <li>Azure VM, disk and network readiness review</li>
+              <li>SQL Server version upgrade planning and compatibility validation</li>
+              <li>Downtime, backup, rollback and cutover planning</li>
               <li>Post-migration performance and health validation</li>
             </ul>
           </div>
           <div>
-            <h4>Business value</h4>
+            <h4>Client value</h4>
             <ul>
-              <li>Lower migration risk</li>
-              <li>Clear execution plan and rollback option</li>
-              <li>Reduced downtime impact</li>
-              <li>Modern, supportable infrastructure</li>
+              <li>Reduced migration risk</li>
+              <li>Clear implementation and rollback plan</li>
+              <li>Improved platform supportability</li>
+              <li>Better readiness before production cutover</li>
             </ul>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="detail-card">
-        <span class="detail-icon">🚨</span>
-        <h2>Production Incident & RCA Support</h2>
-        <p>
-          When a production issue happens, the priority is to restore service quickly and then understand why it happened.
-          We support incident triage, technical troubleshooting and root cause documentation.
-        </p>
+      <article class="detail-card">
+        <div class="detail-head">
+          <span class="detail-icon incident"></span>
+          <div>
+            <h2>Production Incident, RCA & Stabilization Support</h2>
+            <p>
+              During production incidents, we focus on restoring service, identifying impact,
+              communicating clearly and documenting permanent corrective actions.
+            </p>
+          </div>
+        </div>
+
         <div class="detail-grid">
           <div>
-            <h4>What we support</h4>
+            <h4>Support coverage</h4>
             <ul>
-              <li>Initial triage and impact assessment</li>
-              <li>Azure, Windows, SQL and endpoint issue investigation</li>
+              <li>Initial incident triage and impact assessment</li>
+              <li>Azure, Windows, database and endpoint issue investigation</li>
               <li>Log review, event analysis and performance checks</li>
-              <li>Temporary workaround and permanent fix recommendation</li>
-              <li>RCA summary for management and audit needs</li>
+              <li>Workaround, permanent fix and prevention plan</li>
+              <li>Root cause summary for management and audit requirements</li>
             </ul>
           </div>
           <div>
-            <h4>Business value</h4>
+            <h4>Client value</h4>
             <ul>
               <li>Faster service restoration</li>
-              <li>Less confusion during critical incidents</li>
-              <li>Clear communication to stakeholders</li>
-              <li>Prevention plan to avoid repeated issues</li>
+              <li>Reduced confusion during critical incidents</li>
+              <li>Clear stakeholder communication</li>
+              <li>Reduced repeat incidents through corrective actions</li>
             </ul>
           </div>
         </div>
-      </div>
+      </article>
     </section>
 
     <section class="section cta-band reveal">
-      <h2>Need help deciding what support you need?</h2>
-      <p>Share your issue or environment details. We will help identify the right support path.</p>
+      <h2>Need enterprise infrastructure support?</h2>
+      <p>Share your environment details and we will help define the right support model.</p>
       <a class="btn primary" href="index.html#contact">Contact Laknic</a>
     </section>
   </main>
 
   <footer class="footer">
-    <strong>Laknic</strong>
-    <p>Cloud, DBA and Modern Workplace Support</p>
+    <div class="footer-brand">
+      <span class="brand-mark">L</span>
+      <div>
+        <strong>Laknic</strong>
+        <p>Enterprise IT Infrastructure Support</p>
+      </div>
+    </div>
     <span>© 2026 Laknic. All rights reserved.</span>
   </footer>
 
