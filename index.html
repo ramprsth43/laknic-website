@@ -3,14 +3,121 @@
 <head>
   <title>Laknic | Cloud & DBA Support</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <style>
-    body {font-family: Arial; margin:0;}
-    header {background:#0a2540; color:white; padding:20px; text-align:center;}
-    nav a {color:white; margin:10px; text-decoration:none;}
-    section {padding:40px;}
-    .services {display:flex; flex-wrap:wrap; gap:20px;}
-    .card {border:1px solid #ddd; padding:20px; width:250px;}
-    footer {background:#0a2540; color:white; text-align:center; padding:10px;}
+    body {
+      margin:0;
+      font-family: 'Segoe UI', sans-serif;
+      background:#f5f7fb;
+      color:#333;
+    }
+
+    header {
+      background:#0a2540;
+      color:white;
+      padding:20px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    header h1 {margin:0;}
+
+    nav a {
+      color:white;
+      margin-left:20px;
+      text-decoration:none;
+    }
+
+    .hero {
+      background:linear-gradient(135deg,#0a2540,#1d4ed8);
+      color:white;
+      padding:80px 20px;
+      text-align:center;
+    }
+
+    .hero h2 {
+      font-size:40px;
+      margin-bottom:10px;
+    }
+
+    .hero p {
+      font-size:18px;
+      opacity:0.9;
+    }
+
+    .btn {
+      background:#22c55e;
+      color:white;
+      padding:12px 20px;
+      display:inline-block;
+      margin-top:20px;
+      text-decoration:none;
+      border-radius:6px;
+    }
+
+    section {
+      padding:60px 20px;
+      max-width:1100px;
+      margin:auto;
+    }
+
+    h2 {
+      text-align:center;
+      margin-bottom:40px;
+    }
+
+    .grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .card {
+      background:white;
+      padding:20px;
+      border-radius:10px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.05);
+      transition:0.3s;
+    }
+
+    .card:hover {
+      transform:translateY(-5px);
+    }
+
+    .why {
+      background:#eef2ff;
+    }
+
+    .contact form {
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      max-width:500px;
+      margin:auto;
+    }
+
+    input, textarea {
+      padding:10px;
+      border:1px solid #ccc;
+      border-radius:5px;
+    }
+
+    button {
+      background:#1d4ed8;
+      color:white;
+      padding:12px;
+      border:none;
+      border-radius:5px;
+      cursor:pointer;
+    }
+
+    footer {
+      background:#0a2540;
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
   </style>
 </head>
 
@@ -18,7 +125,6 @@
 
 <header>
   <h1>Laknic</h1>
-  <p>Cloud & DBA Support Experts</p>
   <nav>
     <a href="#services">Services</a>
     <a href="#about">About</a>
@@ -26,33 +132,83 @@
   </nav>
 </header>
 
-<section>
-  <h2>Welcome</h2>
-  <p>We provide Azure cloud and SQL Server DBA support for businesses.</p>
-</section>
+<div class="hero">
+  <h2>Cloud & DBA Support You Can Trust</h2>
+  <p>Azure | SQL Server | Performance | Monitoring</p>
+  <a href="#contact" class="btn">Get Support</a>
+</div>
 
 <section id="services">
-  <h2>Services</h2>
-  <div class="services">
-    <div class="card">Azure VM & Infrastructure Support</div>
-    <div class="card">SQL Server DBA & Performance Tuning</div>
-    <div class="card">Monitoring & Alerting Setup</div>
-    <div class="card">Migration & Upgrade Support</div>
+  <h2>Our Services</h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Azure Cloud Support</h3>
+      <p>VMs, networking, storage, cost optimization, troubleshooting.</p>
+    </div>
+
+    <div class="card">
+      <h3>SQL Server DBA</h3>
+      <p>Installation, backups, HA/DR, patching, monitoring.</p>
+    </div>
+
+    <div class="card">
+      <h3>Performance Tuning</h3>
+      <p>Query tuning, indexing, slow query fixes.</p>
+    </div>
+
+    <div class="card">
+      <h3>Monitoring & Alerts</h3>
+      <p>Azure Monitor, Log Analytics, proactive alerting.</p>
+    </div>
+
+    <div class="card">
+      <h3>Migration & Upgrade</h3>
+      <p>On-prem to Azure, version upgrades, zero downtime planning.</p>
+    </div>
+
+    <div class="card">
+      <h3>24/7 Support</h3>
+      <p>Production issue handling and critical support.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="why">
+  <h2>Why Choose Us</h2>
+  <div class="grid">
+    <div class="card">✔ 13+ Years Experience</div>
+    <div class="card">✔ Azure + SQL Expertise</div>
+    <div class="card">✔ Fast Issue Resolution</div>
+    <div class="card">✔ Cost Optimization Focus</div>
   </div>
 </section>
 
 <section id="about">
   <h2>About</h2>
-  <p>We are experienced professionals providing reliable cloud and database solutions.</p>
+  <p style="text-align:center; max-width:700px; margin:auto;">
+    Laknic provides expert cloud and database support services for businesses.
+    We specialize in Azure and SQL Server with focus on performance,
+    reliability, and cost efficiency.
+  </p>
 </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: your-email@example.com</p>
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  
+  <!-- Netlify form -->
+  <form name="contact" method="POST" data-netlify="true">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
 </section>
 
 <footer>
-  <p>© 2026 Laknic</p>
+  <p>© 2026 Laknic | Cloud & DBA Support</p>
 </footer>
 
 </body>
